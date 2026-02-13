@@ -16,3 +16,8 @@ build-backend = "hatchling.build"
 [tool.hatch.version]
 path = "src/nya_scope/_version.py"
 pattern = '__version__(?:: str)? *= *\"(?P<version>[^\"]+)\"'
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.2",
+]
