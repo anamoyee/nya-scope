@@ -3,7 +3,7 @@ name = 'nya-scope'
 dynamic = ['version']
 description = 'Small helper library for creating named scopes/inline modules'
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.11"
 dependencies = []
 
 # [project.scripts]
