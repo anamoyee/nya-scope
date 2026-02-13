@@ -1,0 +1,18 @@
+[project]
+name = 'nya-scope'
+dynamic = ['version']
+description = 'Small helper library for creating named scopes/inline modules'
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+# [project.scripts]
+# nya_scope = "nya_scope.__main__:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+path = "src/nya_scope/_version.py"
+pattern = '__version__(?:: str)? *= *\"(?P<version>[^\"]+)\"'
