@@ -29,5 +29,5 @@ Hint: try removing the call:
 
 
 class Scope(metaclass=__NoInitMeta):
-	def __new__(cls) -> Never:
+	def __new__(cls):
 		raise TypeError(...)  # to appease the type checkers
