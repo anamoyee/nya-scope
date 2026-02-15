@@ -1,1 +1,10 @@
-{}
+{
+	"files.exclude": {
+		"dist/": true,
+		"uv.lock": true
+	},
+	"search.exclude": {
+		"dist/": true,
+		"uv.lock": true
+	}
+}
