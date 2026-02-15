@@ -20,7 +20,7 @@ You are free to adopt it in full, part, or not for your for your project, this i
 
 			@classmethod
 			def class_method(here):  # noqa: N804 <-- if using ruff
-				# name your `cls`, `here` instead - it makes sense in this context
+				# name your `cls`, `here` instead, it makes sense in this context
 				_ = here.value
 
 			@staticmethod
