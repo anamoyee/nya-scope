@@ -1,4 +1,4 @@
-from typing import Never
+from typing import TYPE_CHECKING, Never
 
 
 class __NoInitMeta(type):
@@ -29,5 +29,5 @@ Hint: try removing the call:
 
 
 class Scope(metaclass=__NoInitMeta):
-	def __new__(cls):
-		raise TypeError(...)  # to appease the type checkers
+	if TYPE_CHECKING:  # to appease the type checkers
+		__new__: Never

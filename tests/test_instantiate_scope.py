@@ -1,10 +1,16 @@
 import pytest
+
 from nya_scope import Scope
 
 
-def test_instantiate_scope():
-	class ExampleScope__(Scope):
+@pytest.fixture
+def TestScope__():
+	class TestScope__(Scope):
 		example_value = 42
 
+	return TestScope__
+
+
+def test_instantiate_scope(TestScope__):
 	with pytest.raises(TypeError):
-		ExampleScope__()
+		TestScope__()
