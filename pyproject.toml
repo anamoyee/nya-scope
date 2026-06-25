@@ -5,6 +5,8 @@ description     = 'Small helper library for creating named scopes/inline modules
 readme          = "README.md"
 requires-python = ">=3.11"
 dependencies    = []
+license         = "MIT"
+license-files   = ["LICENSE"]
 
 # [project.scripts]
 # nya_scope = "nya_scope.__main__:main"
@@ -12,6 +14,7 @@ dependencies    = []
 classifiers = [ #
 	"Development Status :: 5 - Production/Stable",
 	"Intended Audience :: Developers",
+	"License :: OSI Approved :: MIT License",
 	"Operating System :: OS Independent",
 	"Programming Language :: Python :: 3",
 	"Programming Language :: Python :: 3.11",
